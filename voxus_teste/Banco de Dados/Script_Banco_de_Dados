@@ -1,0 +1,15 @@
+CREATE TABLE usuarios(
+	id int not null PRIMARY KEY AUTO_INCREMENT,
+    usuario varchar(50) not null,
+    email varchar(100) not null,
+    senha varchar(32) not null
+);
+
+CREATE TABLE tasks(
+	id_task int not null PRIMARY KEY AUTO_INCREMENT,
+	id_usuario int not null,
+    	task varchar(40) not null,
+	descricao text not null,
+	attachment varchar(40) not null,
+	FOREIGN KEY (id_usuario) REFERENCES usuarios(id)
+)
