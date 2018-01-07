@@ -1,16 +1,17 @@
 <?php
 //Classe de conexão com MySQL
 class db{
-    //Atributos de conexão locais
+    //Atributos de conexão local
+
     /*private $host = 'localhost';
 
-    private $usuario = 'root';
+    private $usuario = 'user';
 
-    private $senha = '63970719';    
+    private $senha = 'password';    
 
     private $database = 'voxus_teste';*/
 
-    //Atributos de conexão na nuvem
+    //Atributos de conexão AppHardor
 
     private $host = 'c628faf1-7912-4c1f-91f5-a86100dd8739.mysql.sequelizer.com';
     
